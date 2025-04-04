@@ -5,7 +5,7 @@ import sys
 import time
 from datetime import datetime
 
-def create_ec2_instance(instance_type='t2.micro', ami_id='ami-0c55b159cbfafe1f0', count=1):
+def create_ec2_instance(instance_type='t2.micro', ami_id='ami-00a929b66ed6e0de6', count=1):
     """
     Crea instancias EC2 con los parámetros especificados
     """
