@@ -1,0 +1,33 @@
+{
+    "pipeline": {
+        "name": "PipelineProyectoDevOps",
+        "roleArn": "arn:aws:iam::064362865028:role/LabRole",
+        "artifactStore": {
+            "type": "S3",
+            "location": "mi-bucket-devops-064362865028-us-east-1"
+        },
+        "stages": [
+            {
+                "name": "Source",
+                "actions": [
+                    {
+                        "name": "SourceAction",
+                        "actionTypeId": {
+                            "category": "Source",
+                            "owner": "AWS",
+                            "provider": "CodeCommit",
+                            "version": "1"
+                        },
+                        "outputArtifacts": [{"name": "SourceOutput"}],
+                        "configuration": {
+                            "RepositoryName": "ProyectoFinalDevOps",
+                            "BranchName": "main"
+                        },
+                        "runOrder": 1
+                    }
+                ]
+            }
+        ]
+    }
+}
+

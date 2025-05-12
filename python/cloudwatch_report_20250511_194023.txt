@@ -1,0 +1,6 @@
+ID: i-0f6b05fa170f8ebae | CPU Utilization (Última Hora): 1.85%
+ID: i-07d9e1cdc51f788a9 | CPU Utilization (Última Hora): 6.66%
+ID: i-0d3ebc8e3dde38bb1 | CPU Utilization (Última Hora): 2.45%
+ID: i-0def9c83bf0ac4093 | CPU Utilization (Última Hora): 2.73%
+ID: i-0a982d85408722f00 | CPU Utilization (Última Hora): 1.83%
+ID: i-0cfecd95f52bd8464 | CPU Utilization (Última Hora): 2.25%

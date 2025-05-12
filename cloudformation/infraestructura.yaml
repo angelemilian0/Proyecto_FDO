@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Plantilla para crear una instancia EC2 y un bucket S3.
+
+Resources:
+  MiInstanciaEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-00a929b66ed6e0de6  # Verifica si esta AMI está disponible, si no, te paso otra.
+      IamInstanceProfile: LabInstanceProfile
+      Tags:
+        - Key: Name
+          Value: Instancia-DevOps
+
+  MiBucketS3:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub "mi-bucket-devops-${AWS::AccountId}-${AWS::Region}"
+
